@@ -88,6 +88,22 @@ ctaButton.textContent = "Get Started";
 // 
 
 // ---------------------main--------------------
+let topText = document.querySelectorAll(".top-content .text-content");
+topText[0].firstElementChild.textContent = "Features";
+topText[0].lastElementChild.textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+
+topText[1].firstElementChild.textContent = "About";
+topText[1].lastElementChild.textContent = "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+
+// -------------------bottom-content----------
+let bottomText = document.querySelectorAll(".bottom-content .text-content");
+bottomText[0].firstElementChild.textContent = "Services";
+bottomText[0].lastElementChild.textContent = "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+
+bottomText[1].firstElementChild.textContent = "Product";
+bottomText[1].lastElementChild.textContent = "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+bottomText[2].firstElementChild.textContent = "Vision";
+bottomText[2].lastElementChild.textContent = "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
 // ---------------------footer------------------
 let footerP = document.querySelector("footer p");
 footerP.textContent = "Copyright Great Idea! 2018"
