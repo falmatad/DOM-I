@@ -40,3 +40,53 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+// Img for header 
+
+let headerImg = document.getElementById("cta-img");
+headerImg.setAttribute('src', siteContent["cta"]["img-src"]);
+
+// Img for Body
+
+let bodyImg = document.getElementById("middle-img");
+bodyImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+// Update Html Content
+
+// ---------------------header------------------
+let navLinks = document.getElementsByTagName("a");
+navLinks[0].textContent = "Services";
+navLinks[1].textContent = "Product";
+navLinks[2].textContent = "Vision";
+navLinks[3].textContent = "Features";
+navLinks[4].textContent = "About";
+navLinks[5].textContent = "Contact";
+
+let newMenue1 = document.createElement("a");
+newMenue1.textContent = "Login";
+let newMenue2 = document.createElement("a");
+newMenue1.textContent = "Sign Up";
+
+let newNav = document.querySelector("nav");
+newNav.appendChild(newMenue1, newMenue2);
+
+
+console.log(newNav);
+// cta-title
+
+let ctaTitle = document.querySelector("h1");
+console.log(ctaTitle);
+ctaTitle.style.whiteSpace = "pre";
+ctaTitle.textContent = "Dom \n Is \n Awesome";
+
+// cta-button
+let ctaButton = document.querySelector("button");
+
+ctaButton.textContent = "Get Started";
+// 
+
+// ---------------------main--------------------
+// ---------------------footer------------------
+let footerP = document.querySelector("footer p");
+footerP.textContent = "Copyright Great Idea! 2018"
+
