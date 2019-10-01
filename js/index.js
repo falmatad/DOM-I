@@ -65,10 +65,12 @@ navLinks[5].textContent = "Contact";
 let newMenue1 = document.createElement("a");
 newMenue1.textContent = "Login";
 let newMenue2 = document.createElement("a");
-newMenue1.textContent = "Sign Up";
-
+newMenue2.textContent = "Sign Up";
+console.log(newMenue2);
 let newNav = document.querySelector("nav");
-newNav.appendChild(newMenue1, newMenue2);
+newNav.appendChild(newMenue1);
+newNav.appendChild(newMenue2);
+
 
 
 console.log(newNav);
